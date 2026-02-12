@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./landingStyle.css">
+</head>
+
+<body>
+    <main class="mainWrapper">
+        <div class="mainContent">
+            <header class="headerMain">
+                <div class="leftContentHeader">
+                    <div class="logoHeader">
+                        <a href=""><img class="logo" src="./assets/544ddb17-413b-444e-85ac-060e9e578e63 1.svg"
+                                alt="logo"></a>
+                    </div>
+                    <div class="headerLinkContainer">
+                        <a class="headerLink" href="">Galeria de Cortes</a>
+                    </div>
+                </div>
+                <div class="rightContentHeader">
+                    <div class="headerLinkContainer">
+                        <a class="headerLink" href="./Dashboard/index.html">Área do Usuário</a>
+                        <img id="iconUsuario" src="./assets/IconUsuário.svg" alt="Icone de Usuário">
+                    </div>
+                </div>
+            </header>
+            <div class="contentText">
+                <div class="contentTittle">
+                    <h1>Nossos cortes Contam Sua História de Estilo e Elegância</h1>
+                </div>
+                <div class="contentSubtittle">
+                    <h3>Cada corte na nossa barbearia é mais do que uma transformação estética é a celebração do estilo
+                        e da elegância masculina, onde cada detalhe conta uma história de arte e tradição.</h3>
+                </div>
+                <div class="contentButton">
+                    <button id="buttonMain">Agendar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="avaliationWrapper">
+        <div class="commentContent">
+            <div class="userProfile">
+                <div class="userProfileIcon">
+                    <h3 class="userProfileText">J</h3>
+                </div>
+                <h5 class="userProfileName">João Ribeiro</h5>
+            </div>
+            <div class="ratingContent">
+                <img src="./assets/Stars.svg" alt="Avaliação de 5 estrelas" class="ratingStars">
+            </div>
+            <div class="commentTextContent">
+                <p>"Atendimento impecável, barbeiros profissionais e ambiente acolhedor. Saí com um corte perfeito!
+                    Recomendo fortemente!"</p>
+            </div>
+        </div>
+        <div class="commentContent">
+            <div class="userProfile">
+                <div class="userProfileIcon">
+                    <h3 class="userProfileText">C</h3>
+                </div>
+                <h5 class="userProfileName">Carlos Eduardo</h5>
+            </div>
+            <div class="ratingContent">
+                <img src="./assets/Stars.svg" alt="Avaliação de 5 estrelas" class="ratingStars">
+            </div>
+            <div class="commentTextContent">
+                <p>"Serviço excelente, ambiente agradável e profissionais qualificados. Saí muito satisfeito com meu
+                    novo corte."</p>
+            </div>
+        </div>
+        <div class="commentContent">
+            <div class="userProfile">
+                <div class="userProfileIcon">
+                    <h3 class="userProfileText">S</h3>
+                </div>
+                <h5 class="userProfileName">Sérgio Ribeiro</h5>
+            </div>
+            <div class="ratingContent">
+                <img src="./assets/Stars.svg" alt="Avaliação de 5 estrelas" class="ratingStars">
+            </div>
+            <div class="commentTextContent">
+                <p>"Ótimo atendimento, corte perfeito, ambiente super acolhedor e profissionais atenciosos. Com certeza
+                    voltarei!"
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="carouselWrapper">
+    <div class="carousel-container">
+        <div class="carousel-slide">
+            <img src="./assets/firza-pratama-zRshOvj0K4o-unsplash.png" alt="Image 1">
+            <img src="./assets/firza-pratama-zRshOvj0K4o-unsplash.png" alt="Image 2">
+            <img src="./assets/firza-pratama-zRshOvj0K4o-unsplash.png" alt="Image 3">
+            <img src="./assets/firza-pratama-zRshOvj0K4o-unsplash.png" alt="Image 4">
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+
+    <div class="dots-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+</div>
+    <footer class="footerLanding">
+        <div class="wrapperFooter">
+            <div class="leftFooterContent">
+                <img id="logoFooter" src="./assets/544ddb17-413b-444e-85ac-060e9e578e63 1.svg" alt="logo">
+            </div>
+            <div class="rightFooterContent">
+                <div class="contactUsContent">
+                    <div class="locationContent">
+                        <img src="./assets/FooterAssets/Location.svg" alt="Localização ícone">
+                        <p class="footerText">Rua Marechal Antônio Sousa, 1202 - Jardim América</p>
+                    </div>
+                    <div class="telContent">
+                        <img src="./assets//FooterAssets/Telefone.svg" alt="Ícone de telefone">
+                        <p class="footerText">(21) 99423-6401</p>
+                    </div>
+                </div>
+                <div class="socialmediaContent">
+                    <p class="footerText" id="spanFooterText">Redes Sociais</p>
+                    <a href="/"><img class="socialMediaIcons" src="./assets/FooterAssets/Instagram.svg" alt="Ícone Instagram"></a>
+                    <a href="/"><img class="socialMediaIcons" src="./assets/FooterAssets/Facebook.svg" alt="Ícone Facebook"></a>
+                    <a href=""><img class="socialMediaIcons" src="./assets/FooterAssets/whatsapp-svgrepo-com.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function moveSlide(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            const slides = document.querySelectorAll('.carousel-slide img');
+            const dots = document.querySelectorAll('.dot');
+
+            if (n > slides.length) {
+                slideIndex = 1;
+            }
+
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = 'none';
+            }
+
+            for (i = 0; i < dots.length; i++) {
+                dots[i].classList.remove('active');
+            }
+
+            slides[slideIndex - 1].style.display = 'block';
+            dots[slideIndex - 1].classList.add('active');
+        }
+    </script>
+</body>
+
+</html>
