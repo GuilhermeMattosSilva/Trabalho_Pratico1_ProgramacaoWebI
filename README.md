@@ -10,7 +10,7 @@ Além disso, inclui um protótipo de painel administrativo simples, onde é poss
 A proposta é demonstrar organização visual, boas práticas de UI e estruturação front-end sem frameworks, utilizando apenas tecnologias web puras.
 
 # 🧩 Funcionalidades
-# 🖥️ Landing Page
+## 🖥️ Landing Page
 
 Seção de apresentação da barbearia
 
@@ -24,7 +24,7 @@ Botão de agendamento
 
 Layout responsivo para mobile, tablet e desktop
 
-# 🛠️ Painel Administrativo (Protótipo)
+## 🛠️ Painel Administrativo (Protótipo)
 
 Visualização dos horários dos cabeleireiros
 
